@@ -1,0 +1,45 @@
+{
+  "name": "@popcorn-ai/cli",
+  "version": "0.1.0",
+  "description": "Popcorn CLI: run eval suites (popcorn review), replay runs (popcorn rewind) and tail live runs (popcorn watch)",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popcorn-ai/popcorn",
+    "directory": "packages/cli"
+  },
+  "bin": {
+    "popcorn": "./dist/bin.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@popcorn-ai/core": "workspace:^",
+    "@popcorn-ai/sdk": "workspace:^",
+    "commander": "^12.1.0",
+    "jiti": "^2.7.0",
+    "p-limit": "^7.3.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1"
+  }
+}

@@ -1,0 +1,11 @@
+packages:
+  - packages/*
+  - apps/*
+  - examples/*
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+  '@tailwindcss/oxide': true
+  # Optional native speed-up for BullMQ's msgpack; the pure-JS fallback is fine.
+  msgpackr-extract: false

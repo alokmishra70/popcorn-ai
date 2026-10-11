@@ -1,0 +1,51 @@
+{
+  "name": "@popcorn-ai/sdk",
+  "version": "0.1.0",
+  "description": "Record, replay and evaluate tool-calling AI agents. Wrap your LLM client and tools once; every run becomes a trace.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "keywords": [
+    "ai",
+    "agents",
+    "llm",
+    "tracing",
+    "observability",
+    "evals",
+    "anthropic",
+    "openai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popcorn-ai/popcorn",
+    "directory": "packages/sdk"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage.enabled --coverage.include=src",
+    "bench": "tsx bench/span-overhead.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@popcorn-ai/core": "workspace:^"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.7",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.15"
+  }
+}

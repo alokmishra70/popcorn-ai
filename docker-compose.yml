@@ -1,0 +1,84 @@
+# One-command self-host (FR-5.1):
+#   docker compose up
+# Dashboard on http://localhost:3000, API on http://localhost:4100.
+# The seeded project's API key is POPCORN_API_KEY below; change it before exposing anything.
+
+x-env: &env
+  DATABASE_URL: postgres://popcorn:popcorn@postgres:5432/popcorn
+  REDIS_URL: redis://redis:6379
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: popcorn
+      POSTGRES_PASSWORD: popcorn
+      POSTGRES_DB: popcorn
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U popcorn -d popcorn']
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  migrate:
+    build: { context: ., target: server }
+    image: popcorn-server
+    environment:
+      <<: *env
+      POPCORN_SEED_API_KEY: ${POPCORN_API_KEY:-pk_local_change_me_0000000000}
+    command: sh -c "node packages/db/dist/bin/migrate.js && node packages/db/dist/bin/seed.js support-bot"
+    depends_on:
+      postgres: { condition: service_healthy }
+    restart: 'no'
+
+  api:
+    image: popcorn-server
+    environment:
+      <<: *env
+      PORT: 4100
+      RETENTION_DAYS: ${RETENTION_DAYS:-0}
+      CORS_ORIGINS: http://localhost:3000
+    ports: ['4100:4100']
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ['CMD', 'wget', '-qO-', 'http://localhost:4100/readyz']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  worker:
+    image: popcorn-server
+    command: ['node', 'apps/api/dist/worker.js']
+    environment:
+      <<: *env
+      RETENTION_DAYS: ${RETENTION_DAYS:-0}
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+
+  dashboard:
+    build: { context: ., target: dashboard }
+    environment:
+      DATABASE_URL: postgres://popcorn:popcorn@postgres:5432/popcorn
+      POPCORN_PUBLIC_API_URL: http://localhost:4100
+      POPCORN_READ_ONLY: ${POPCORN_READ_ONLY:-false}
+      POPCORN_DASHBOARD_USER: ${POPCORN_DASHBOARD_USER:-}
+      POPCORN_DASHBOARD_PASSWORD: ${POPCORN_DASHBOARD_PASSWORD:-}
+    ports: ['3000:3000']
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+
+volumes:
+  postgres-data:

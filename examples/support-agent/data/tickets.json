@@ -1,0 +1,402 @@
+[
+  {
+    "id": "T-001",
+    "subject": "Where is my order?",
+    "body": "Hi, I ordered a kettle last week (order A-1001) and the tracking hasn't updated in 4 days. Can you check?",
+    "customerEmail": "maya.patel@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "T-002",
+    "subject": "Package arrived damaged",
+    "body": "My cast iron pan from order A-1002 arrived with a cracked handle. I'd like a replacement or refund.",
+    "customerEmail": "liam.chen@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-003",
+    "subject": "Charged twice",
+    "body": "I see two charges of $89.00 on my card for the same order A-1003. Please fix this.",
+    "customerEmail": "sofia.rossi@example.com",
+    "expected": {
+      "category": "billing",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "T-004",
+    "subject": "Can't log in",
+    "body": "I reset my password twice but the login page keeps saying invalid credentials.",
+    "customerEmail": "noah.kim@example.com",
+    "expected": {
+      "category": "account",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-005",
+    "subject": "Is the Duo kettle induction compatible?",
+    "body": "Thinking about buying the Duo kettle. Does it work on an induction hob?",
+    "customerEmail": "emma.johnson@example.com",
+    "expected": {
+      "category": "product",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-006",
+    "subject": "Wrong item",
+    "body": "I ordered the 28cm skillet but got a 20cm one. Order A-1004.",
+    "customerEmail": "oliver.brown@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-007",
+    "subject": "Delivery very late",
+    "body": "Order A-1005 was supposed to arrive 8 days ago. Nothing yet.",
+    "customerEmail": "ava.garcia@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-008",
+    "subject": "Change my email",
+    "body": "Please update the email on my account to ava.g.new@example.com.",
+    "customerEmail": "ava.garcia@example.com",
+    "expected": {
+      "category": "account",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-009",
+    "subject": "How do I season the pan?",
+    "body": "Just got a cast iron pan. What's the right way to season it before first use?",
+    "customerEmail": "lucas.martin@example.com",
+    "expected": {
+      "category": "product",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-010",
+    "subject": "Invoice for my company",
+    "body": "Could you send a VAT invoice for order A-1006? I need it for expenses.",
+    "customerEmail": "mia.wilson@example.com",
+    "expected": {
+      "category": "billing",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-011",
+    "subject": "Return request",
+    "body": "The knife set from order A-1007 isn't what I expected. How do I return it?",
+    "customerEmail": "ethan.moore@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-012",
+    "subject": "Tracking says delivered but nothing here",
+    "body": "Order A-1008 shows delivered yesterday but there is no parcel at my door.",
+    "customerEmail": "isabella.taylor@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "T-013",
+    "subject": "Delete my account",
+    "body": "I want my account and all my data deleted, please.",
+    "customerEmail": "james.anderson@example.com",
+    "expected": {
+      "category": "account",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-014",
+    "subject": "Dishwasher safe?",
+    "body": "Is the enamel dutch oven dishwasher safe?",
+    "customerEmail": "charlotte.thomas@example.com",
+    "expected": {
+      "category": "product",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-015",
+    "subject": "Payment declined but money taken",
+    "body": "My card was declined at checkout but my bank shows a pending charge of $45.",
+    "customerEmail": "benjamin.jackson@example.com",
+    "expected": {
+      "category": "billing",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-016",
+    "subject": "Missing part",
+    "body": "The pour-over set from A-1009 came without the filter holder.",
+    "customerEmail": "amelia.white@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-017",
+    "subject": "Address change",
+    "body": "I typed the wrong street for order A-1010. Can you change it before it ships?",
+    "customerEmail": "henry.harris@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-018",
+    "subject": "Do you ship to Canada?",
+    "body": "Do you deliver to Toronto and how long does it take?",
+    "customerEmail": "harper.clark@example.com",
+    "expected": {
+      "category": "product",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-019",
+    "subject": "Refund not received",
+    "body": "I returned order A-1011 two weeks ago and haven't seen the refund.",
+    "customerEmail": "alexander.lewis@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-020",
+    "subject": "Two-factor not working",
+    "body": "My authenticator codes are rejected when I try to sign in.",
+    "customerEmail": "evelyn.walker@example.com",
+    "expected": {
+      "category": "account",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-021",
+    "subject": "Kettle stopped working",
+    "body": "The electric kettle from order A-1012 stopped heating after a week.",
+    "customerEmail": "daniel.hall@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-022",
+    "subject": "Order stuck in processing",
+    "body": "A-1013 has said processing for 6 days. Is something wrong?",
+    "customerEmail": "abigail.young@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-023",
+    "subject": "Price match",
+    "body": "I saw the same mixer cheaper elsewhere. Do you price match?",
+    "customerEmail": "michael.allen@example.com",
+    "expected": {
+      "category": "other",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-024",
+    "subject": "Cancel my order",
+    "body": "Please cancel order A-1014, I ordered by mistake.",
+    "customerEmail": "emily.king@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-025",
+    "subject": "Gift wrapping",
+    "body": "Can I add gift wrapping to an order I already placed?",
+    "customerEmail": "william.wright@example.com",
+    "expected": {
+      "category": "other",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-026",
+    "subject": "Unexpected subscription charge",
+    "body": "I was charged $9.99 for a 'Kettle Club' subscription I never signed up for.",
+    "customerEmail": "elizabeth.scott@example.com",
+    "expected": {
+      "category": "billing",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-027",
+    "subject": "Warranty question",
+    "body": "How long is the warranty on the stand mixer?",
+    "customerEmail": "sebastian.green@example.com",
+    "expected": {
+      "category": "product",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-028",
+    "subject": "Wrong colour",
+    "body": "Ordered the sage green kettle, received cream. Order A-1015.",
+    "customerEmail": "victoria.baker@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-029",
+    "subject": "Parcel returned to sender",
+    "body": "Courier says order A-1016 is being returned to sender. Why?",
+    "customerEmail": "jack.adams@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-030",
+    "subject": "Locked out after too many attempts",
+    "body": "My account is locked. How long until I can try again?",
+    "customerEmail": "grace.nelson@example.com",
+    "expected": {
+      "category": "account",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-031",
+    "subject": "Can I use the pan in the oven?",
+    "body": "Is the stainless saute pan oven safe and up to what temperature?",
+    "customerEmail": "samuel.carter@example.com",
+    "expected": {
+      "category": "product",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-032",
+    "subject": "Double charged again",
+    "body": "This is the second time I've been charged twice. Order A-1017.",
+    "customerEmail": "chloe.mitchell@example.com",
+    "expected": {
+      "category": "billing",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "T-033",
+    "subject": "Late delivery for a gift",
+    "body": "Order A-1018 is a birthday gift and it's 3 days late. Any update?",
+    "customerEmail": "matthew.perez@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-034",
+    "subject": "Partnership enquiry",
+    "body": "We run a cooking school and would like to discuss bulk pricing.",
+    "customerEmail": "lily.roberts@example.com",
+    "expected": {
+      "category": "other",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-035",
+    "subject": "Glass lid shattered",
+    "body": "The glass lid from A-1019 shattered on first use. Very unsafe.",
+    "customerEmail": "david.turner@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "T-036",
+    "subject": "Update card on file",
+    "body": "How do I change the card used for my saved payment method?",
+    "customerEmail": "zoe.phillips@example.com",
+    "expected": {
+      "category": "billing",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-037",
+    "subject": "Where is my refund for A-1020?",
+    "body": "You approved my return for A-1020 but the money hasn't arrived.",
+    "customerEmail": "joseph.campbell@example.com",
+    "expected": {
+      "category": "refund",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-038",
+    "subject": "Express shipping upgrade",
+    "body": "Can I upgrade order A-1021 to express delivery?",
+    "customerEmail": "hannah.parker@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-039",
+    "subject": "Recipe suggestions",
+    "body": "Do you have recipes for the dutch oven? Love the product!",
+    "customerEmail": "ryan.evans@example.com",
+    "expected": {
+      "category": "other",
+      "priority": "normal"
+    }
+  },
+  {
+    "id": "T-040",
+    "subject": "Order never arrived",
+    "body": "Order A-1022 was due 10 days ago. I'm a regular customer and this is frustrating.",
+    "customerEmail": "maya.patel@example.com",
+    "expected": {
+      "category": "shipping",
+      "priority": "urgent"
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "@popcorn-ai/example-support-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dogfood agent for Popcorn: triages support tickets, looks up orders, drafts a reply",
+  "type": "module",
+  "scripts": {
+    "tickets": "tsx --env-file-if-exists=../../.env scripts/run-tickets.ts",
+    "suite": "tsx --env-file-if-exists=../../.env scripts/build-suite.ts",
+    "review": "popcorn review --suite support-v1",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@popcorn-ai/cli": "workspace:^",
+    "@popcorn-ai/sdk": "workspace:^"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}

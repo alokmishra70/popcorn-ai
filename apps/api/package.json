@@ -1,0 +1,32 @@
+{
+  "name": "@popcorn-ai/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Popcorn ingest and query API",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx watch --env-file-if-exists=../../.env src/main.ts",
+    "dev:worker": "tsx watch --env-file-if-exists=../../.env src/worker.ts",
+    "start": "node dist/main.js",
+    "start:worker": "node dist/worker.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist",
+    "bench": "tsx --env-file-if-exists=../../.env bench/ingest-load.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.1",
+    "@popcorn-ai/core": "workspace:^",
+    "@popcorn-ai/db": "workspace:^",
+    "bullmq": "^5.76.0",
+    "fastify": "^5.12.5",
+    "zod": "^4.3.3"
+  },
+  "devDependencies": {
+    "pino-pretty": "^13.2.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.15"
+  }
+}

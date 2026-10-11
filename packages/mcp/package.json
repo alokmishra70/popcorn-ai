@@ -1,0 +1,35 @@
+{
+  "name": "@popcorn-ai/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Popcorn: lets Claude or another agent search runs, read traces and run eval suites",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "popcorn-mcp": "./dist/server.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/tools.d.ts",
+      "import": "./dist/tools.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@popcorn-ai/cli": "workspace:^",
+    "@popcorn-ai/core": "workspace:^",
+    "zod": "^4.3.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1"
+  }
+}

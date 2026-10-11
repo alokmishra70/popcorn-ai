@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "typecheck": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "env": ["DATABASE_URL", "TEST_DATABASE_URL"]
+    },
+    // Both suites truncate TEST_DATABASE_URL, so they must not overlap.
+    "@popcorn-ai/api#test": {
+      "dependsOn": ["^build", "@popcorn-ai/db#test"],
+      "env": ["DATABASE_URL", "TEST_DATABASE_URL"]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@popcorn-ai/core",
+  "version": "0.1.0",
+  "description": "Shared domain model for Popcorn: span schema, pricing, anomaly flags, run diffing and eval checks",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "zod": "^4.3.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1"
+  }
+}
