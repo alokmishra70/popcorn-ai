@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@popcornai/cli"><img src="https://img.shields.io/npm/v/@popcornai/cli?color=d42a2f&label=npm" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/@popcornai/cli"><img src="https://img.shields.io/npm/dw/@popcornai/cli?color=d42a2f" alt="weekly downloads"></a>
+  <img src="https://img.shields.io/badge/node-%E2%89%A520.11-1f8a4c" alt="Node 20.11 or newer">
   <a href="https://github.com/alokmishra70/popcorn-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1c1917" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/TypeScript-strict-2563a8" alt="TypeScript strict">
   <a href="https://github.com/alokmishra70/popcorn-ai"><img src="https://img.shields.io/github/stars/alokmishra70/popcorn-ai?style=flat&color=1c1917" alt="GitHub stars"></a>
