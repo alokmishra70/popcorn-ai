@@ -1,6 +1,26 @@
-# @popcornai/sdk
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alokmishra70/popcorn-ai/main/.github/assets/logo.png" width="96" height="96" alt="Popcorn AI logo">
+</p>
 
-**Grab the popcorn. Watch what your agent really did.**
+<h1 align="center">@popcornai/sdk</h1>
+
+<p align="center"><b>Grab the popcorn. Watch what your agent really did.</b></p>
+
+<p align="center">Tracing, replay and regression evals for TypeScript AI agents.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@popcornai/sdk"><img src="https://img.shields.io/npm/v/@popcornai/sdk?color=d42a2f&label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@popcornai/sdk"><img src="https://img.shields.io/npm/dw/@popcornai/sdk?color=d42a2f" alt="weekly downloads"></a>
+  <a href="https://github.com/alokmishra70/popcorn-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1c1917" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/TypeScript-strict-2563a8" alt="TypeScript strict">
+  <a href="https://github.com/alokmishra70/popcorn-ai"><img src="https://img.shields.io/github/stars/alokmishra70/popcorn-ai?style=flat&color=1c1917" alt="GitHub stars"></a>
+</p>
+
+<p align="center"><a href="https://github.com/alokmishra70/popcorn-ai/blob/main/docs/quickstart.md">Quickstart</a> · <a href="https://github.com/alokmishra70/popcorn-ai/tree/main/docs">Docs</a> · <a href="https://github.com/alokmishra70/popcorn-ai/tree/main/examples/support-agent">Example agent</a> · <a href="https://github.com/alokmishra70/popcorn-ai">GitHub</a></p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alokmishra70/popcorn-ai/main/.github/assets/demo.gif" width="800" alt="Popcorn AI demo: a looping agent run in the timeline, then a pull request review catching a regression">
+</p>
 
 The tracing SDK for [Popcorn AI](https://github.com/alokmishra70/popcorn-ai), an open-source toolkit for TypeScript AI agents. Wrap your LLM client and tools once; every agent run becomes a trace you can inspect, replay against recorded tool outputs, and turn into a regression test.
 

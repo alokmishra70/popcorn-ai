@@ -46,15 +46,15 @@ Running on pushes to `main` matters: those reviews are the baselines pull reques
 
 ## Inputs
 
-| Input               | Default      | Description                                 |
-| ------------------- | ------------ | ------------------------------------------- |
-| `suite`             | required     | Dataset to run                              |
-| `config`            |              | Path to `popcorn.config.ts`                 |
+| Input               | Default      | Description                                |
+| ------------------- | ------------ | ------------------------------------------ |
+| `suite`             | required     | Dataset to run                             |
+| `config`            |              | Path to `popcorn.config.ts`                |
 | `working-directory` | `.`          | Where the config and `@popcornai/cli` live |
-| `baseline-branch`   | `main`       | Branch to compare against                   |
-| `repeat`            | `1`          | Attempts per case, to catch flaky cases     |
-| `fail-on`           | `regression` | `regression`, `any` or `never`              |
-| `comment`           | `true`       | Post or update the PR comment               |
+| `baseline-branch`   | `main`       | Branch to compare against                  |
+| `repeat`            | `1`          | Attempts per case, to catch flaky cases    |
+| `fail-on`           | `regression` | `regression`, `any` or `never`             |
+| `comment`           | `true`       | Post or update the PR comment              |
 
 The report is also written to the job summary. Outputs: `exit-code` and `report` (path to the markdown).
 

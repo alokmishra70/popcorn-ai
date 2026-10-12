@@ -1,4 +1,26 @@
-# @popcornai/cli
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alokmishra70/popcorn-ai/main/.github/assets/logo.png" width="96" height="96" alt="Popcorn AI logo">
+</p>
+
+<h1 align="center">@popcornai/cli</h1>
+
+<p align="center"><b>Grab the popcorn. Watch what your agent really did.</b></p>
+
+<p align="center">Run eval suites against your agent, replay recorded runs, and catch regressions in CI.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@popcornai/cli"><img src="https://img.shields.io/npm/v/@popcornai/cli?color=d42a2f&label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@popcornai/cli"><img src="https://img.shields.io/npm/dw/@popcornai/cli?color=d42a2f" alt="weekly downloads"></a>
+  <a href="https://github.com/alokmishra70/popcorn-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1c1917" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/TypeScript-strict-2563a8" alt="TypeScript strict">
+  <a href="https://github.com/alokmishra70/popcorn-ai"><img src="https://img.shields.io/github/stars/alokmishra70/popcorn-ai?style=flat&color=1c1917" alt="GitHub stars"></a>
+</p>
+
+<p align="center"><a href="https://github.com/alokmishra70/popcorn-ai/blob/main/docs/quickstart.md">Quickstart</a> · <a href="https://github.com/alokmishra70/popcorn-ai/tree/main/docs">Docs</a> · <a href="https://github.com/alokmishra70/popcorn-ai/tree/main/examples/support-agent">Example agent</a> · <a href="https://github.com/alokmishra70/popcorn-ai">GitHub</a></p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alokmishra70/popcorn-ai/main/.github/assets/demo.gif" width="800" alt="Popcorn AI demo: a looping agent run in the timeline, then a pull request review catching a regression">
+</p>
 
 Command line for [Popcorn AI](https://github.com/alokmishra70/popcorn-ai): run eval suites against your AI agent and catch regressions, replay recorded runs, and tail live runs.
 

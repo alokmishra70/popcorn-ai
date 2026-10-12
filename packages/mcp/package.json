@@ -1,6 +1,6 @@
 {
   "name": "@popcornai/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for Popcorn: lets Claude or another agent search runs, read traces and run eval suites",
   "keywords": [
     "mcp",

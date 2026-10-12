@@ -2,7 +2,14 @@
 
 All notable changes are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and versions follow [semver](https://semver.org/).
 
-## [Unreleased]
+## [0.1.1] - 2026-10-12
+
+### Changed
+
+- npm pages: logo, badges, demo GIF and links to the docs, quickstart and example agent.
+- Package metadata: homepage, issue tracker and author; LICENSE shipped in every package.
+
+## [0.1.0] - 2026-10-12
 
 First public build, covering the v0.1 to v1.0 scope of the PRD.
 

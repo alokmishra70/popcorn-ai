@@ -1,4 +1,22 @@
-# @popcornai/mcp
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alokmishra70/popcorn-ai/main/.github/assets/logo.png" width="96" height="96" alt="Popcorn AI logo">
+</p>
+
+<h1 align="center">@popcornai/mcp</h1>
+
+<p align="center"><b>Grab the popcorn. Watch what your agent really did.</b></p>
+
+<p align="center">An MCP server that lets your coding assistant search, read and evaluate your agent's runs.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@popcornai/mcp"><img src="https://img.shields.io/npm/v/@popcornai/mcp?color=d42a2f&label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@popcornai/mcp"><img src="https://img.shields.io/npm/dw/@popcornai/mcp?color=d42a2f" alt="weekly downloads"></a>
+  <a href="https://github.com/alokmishra70/popcorn-ai/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-1c1917" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/TypeScript-strict-2563a8" alt="TypeScript strict">
+  <a href="https://github.com/alokmishra70/popcorn-ai"><img src="https://img.shields.io/github/stars/alokmishra70/popcorn-ai?style=flat&color=1c1917" alt="GitHub stars"></a>
+</p>
+
+<p align="center"><a href="https://github.com/alokmishra70/popcorn-ai/blob/main/docs/quickstart.md">Quickstart</a> · <a href="https://github.com/alokmishra70/popcorn-ai/tree/main/docs">Docs</a> · <a href="https://github.com/alokmishra70/popcorn-ai/tree/main/examples/support-agent">Example agent</a> · <a href="https://github.com/alokmishra70/popcorn-ai">GitHub</a></p>
 
 An [MCP](https://modelcontextprotocol.io) server for [Popcorn AI](https://github.com/alokmishra70/popcorn-ai). It lets Claude, or any MCP client, search your AI agent's runs, read a trace step by step, and run an eval suite.
 

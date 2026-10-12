@@ -1,6 +1,6 @@
 {
   "name": "@popcornai/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Popcorn CLI: run eval suites (popcorn review), replay runs (popcorn rewind) and tail live runs (popcorn watch)",
   "keywords": [
     "ai",
