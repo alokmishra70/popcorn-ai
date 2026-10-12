@@ -1,7 +1,7 @@
 # SDK reference
 
 ```ts
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 ```
 
 Every function is also a named export.
@@ -67,7 +67,7 @@ Return an instrumented view of the client; the original object is not modified.
 - Anthropic: `messages.create`, `messages.stream`, and their `beta` variants, streaming or not.
 - OpenAI: `chat.completions.create` and `responses.create`, streaming or not. Streaming chat completions only report tokens when you pass `stream_options: { include_usage: true }`.
 
-Neither SDK is a dependency of `@popcorn-ai/sdk`.
+Neither SDK is a dependency of `@popcornai/sdk`.
 
 ## popcorn.rewind(runId, options?)
 

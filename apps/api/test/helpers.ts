@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
-import type { SpanPayload } from '@popcorn-ai/core';
-import { createApiKey, createDb, createProject, type DbHandle } from '@popcorn-ai/db';
-import { runMigrations } from '@popcorn-ai/db/migrate';
+import type { SpanPayload } from '@popcornai/core';
+import { createApiKey, createDb, createProject, type DbHandle } from '@popcornai/db';
+import { runMigrations } from '@popcornai/db/migrate';
 import { buildApp } from '../src/app';
 import { InlineIngestQueue } from '../src/ingest/queue';
 

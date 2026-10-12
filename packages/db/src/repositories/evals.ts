@@ -4,7 +4,7 @@ import {
   type CheckResult,
   type CollapsedOutcome,
   type EvalRunOutcome,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import { and, asc, desc, eq, isNotNull, ne, sql } from 'drizzle-orm';
 import type { Database } from '../client';
 import {

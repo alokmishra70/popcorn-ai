@@ -1,4 +1,4 @@
-import { compareEvalRuns, type CaseOutcome } from '@popcorn-ai/core';
+import { compareEvalRuns, type CaseOutcome } from '@popcornai/core';
 import { describe, expect, it } from 'vitest';
 import { commentMarker, headline, renderMarkdown, stars } from '../src/review/report';
 import type { ReviewReport } from '../src/review/runner';

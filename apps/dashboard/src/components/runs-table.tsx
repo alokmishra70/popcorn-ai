@@ -6,7 +6,7 @@ import {
   formatUsd,
   type RunFlag,
   type RunStatus,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import {
   createColumnHelper,
   flexRender,

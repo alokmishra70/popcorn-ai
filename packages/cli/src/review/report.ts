@@ -5,7 +5,7 @@ import {
   formatUsd,
   type CaseComparison,
   type EvalAggregate,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import type { CaseResult, ReviewReport } from './runner';
 
 export type ReportFormat = 'table' | 'markdown' | 'json';

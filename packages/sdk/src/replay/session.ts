@@ -1,4 +1,4 @@
-import { listSteps, type StoredSpan } from '@popcorn-ai/core';
+import { listSteps, type StoredSpan } from '@popcornai/core';
 
 export interface Fixture {
   toolName: string;

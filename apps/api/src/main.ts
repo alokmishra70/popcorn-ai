@@ -1,4 +1,4 @@
-import { createDb, deleteRunsOlderThan } from '@popcorn-ai/db';
+import { createDb, deleteRunsOlderThan } from '@popcornai/db';
 import { buildApp } from './app';
 import { loadConfig } from './config';
 import {

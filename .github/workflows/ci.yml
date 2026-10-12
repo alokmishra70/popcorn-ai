@@ -72,7 +72,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
-      - run: pnpm --filter @popcorn-ai/dashboard exec playwright install --with-deps chromium
+      - run: pnpm --filter @popcornai/dashboard exec playwright install --with-deps chromium
       - name: Seed demo data
         run: scripts/demo-data.sh
       - run: pnpm test:e2e

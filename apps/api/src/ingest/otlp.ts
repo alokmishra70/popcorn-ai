@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import type { SpanKind, SpanPayload, TokenUsage } from '@popcorn-ai/core';
+import type { SpanKind, SpanPayload, TokenUsage } from '@popcornai/core';
 
 /*
  * OTLP/HTTP JSON → Popcorn spans (FR-2.7). Follows the OpenTelemetry GenAI

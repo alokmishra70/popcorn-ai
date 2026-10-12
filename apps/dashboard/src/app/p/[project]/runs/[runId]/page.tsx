@@ -1,5 +1,5 @@
-import { formatDuration, formatTokens, formatUsd, listSteps } from '@popcorn-ai/core';
-import { getRun, listDatasets, listRuns } from '@popcorn-ai/db';
+import { formatDuration, formatTokens, formatUsd, listSteps } from '@popcornai/core';
+import { getRun, listDatasets, listRuns } from '@popcornai/db';
 import { GitCompareArrows } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';

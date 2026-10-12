@@ -1,4 +1,4 @@
-import type { RunFlag, RunStatus, StoredSpan } from '@popcorn-ai/core';
+import type { RunFlag, RunStatus, StoredSpan } from '@popcornai/core';
 import {
   and,
   arrayContains,

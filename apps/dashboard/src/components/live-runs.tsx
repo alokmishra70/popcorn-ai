@@ -6,7 +6,7 @@ import {
   formatUsd,
   type RunFlag,
   type RunStatus,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { cn, shortId } from '@/lib/utils';

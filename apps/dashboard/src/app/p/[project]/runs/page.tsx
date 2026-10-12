@@ -1,4 +1,4 @@
-import { countRuns, getRunFacets, listRuns } from '@popcorn-ai/db';
+import { countRuns, getRunFacets, listRuns } from '@popcornai/db';
 import type { Metadata } from 'next';
 import { EmptyState, PageHeader } from '@/components/page-header';
 import { Pagination } from '@/components/pagination';

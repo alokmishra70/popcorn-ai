@@ -5,7 +5,7 @@ Ten minutes from install to your first trace. You need Node 20 or newer and eith
 ## 1. Start Popcorn
 
 ```bash
-git clone https://github.com/popcorn-ai/popcorn && cd popcorn
+git clone https://github.com/alokmishra70/popcorn-ai && cd popcorn-ai
 docker compose up
 ```
 
@@ -16,7 +16,7 @@ Without Docker, see [Self-hosting](self-hosting.md#without-docker).
 ## 2. Install the SDK
 
 ```bash
-npm install @popcorn-ai/sdk
+npm install @popcornai/sdk
 ```
 
 ```bash
@@ -28,7 +28,7 @@ export POPCORN_API_KEY=pk_local_change_me_0000000000
 
 ```ts
 import Anthropic from '@anthropic-ai/sdk';
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 
 const anthropic = popcorn.wrapAnthropic(new Anthropic());
 

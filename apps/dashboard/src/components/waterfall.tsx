@@ -1,6 +1,6 @@
 'use client';
 
-import { formatDuration, SpanAttr } from '@popcorn-ai/core';
+import { formatDuration, SpanAttr } from '@popcornai/core';
 import { ChevronRight } from 'lucide-react';
 import { useMemo, useRef, useState, type KeyboardEvent } from 'react';
 import { cn } from '@/lib/utils';

@@ -10,7 +10,7 @@ import {
   type RunStatus,
   type SpanPayload,
   type StoredSpan,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import { and, eq, inArray, sql } from 'drizzle-orm';
 import type { Database } from '../client';
 import { toStoredSpan } from '../mappers';

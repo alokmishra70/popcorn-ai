@@ -1,4 +1,4 @@
-import { SpanAttr, type TokenUsage } from '@popcorn-ai/core';
+import { SpanAttr, type TokenUsage } from '@popcornai/core';
 import { activeContext, nextStep } from '../context';
 import type { ReplaySession } from '../replay/session';
 import type { Span } from '../span';

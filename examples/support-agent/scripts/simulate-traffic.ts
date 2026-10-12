@@ -6,7 +6,7 @@
  *
  * Runs until stopped. With SUPPORT_AGENT_OFFLINE=true it costs nothing.
  */
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 import { loadTickets, supportTriage } from '../src/index';
 
 const perMinute = Number(process.argv[2] ?? 6);

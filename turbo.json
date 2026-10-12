@@ -19,8 +19,8 @@
       "env": ["DATABASE_URL", "TEST_DATABASE_URL"]
     },
     // Both suites truncate TEST_DATABASE_URL, so they must not overlap.
-    "@popcorn-ai/api#test": {
-      "dependsOn": ["^build", "@popcorn-ai/db#test"],
+    "@popcornai/api#test": {
+      "dependsOn": ["^build", "@popcornai/db#test"],
       "env": ["DATABASE_URL", "TEST_DATABASE_URL"]
     },
     "clean": {

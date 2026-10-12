@@ -1,4 +1,4 @@
-import { defineConfig } from '@popcorn-ai/cli';
+import { defineConfig } from '@popcornai/cli';
 import { createHash } from 'node:crypto';
 import { model, supportTriage, systemPrompt } from './src/index';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@popcorn-ai/example-support-agent",
+  "name": "@popcornai/example-support-agent",
   "version": "0.1.0",
   "private": true,
   "description": "Dogfood agent for Popcorn: triages support tickets, looks up orders, drafts a reply",
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
-    "@popcorn-ai/cli": "workspace:^",
-    "@popcorn-ai/sdk": "workspace:^"
+    "@popcornai/cli": "workspace:^",
+    "@popcornai/sdk": "workspace:^"
   },
   "devDependencies": {
     "tsx": "^4.23.15"

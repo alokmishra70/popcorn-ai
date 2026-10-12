@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import type { SpanError, SpanKind, SpanPayload, SpanStatus, TokenUsage } from '@popcorn-ai/core';
+import type { SpanError, SpanKind, SpanPayload, SpanStatus, TokenUsage } from '@popcornai/core';
 import { now } from './clock';
 
 export type SpanEndHandler = (payload: SpanPayload) => void;

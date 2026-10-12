@@ -5,8 +5,8 @@
  *
  *   pnpm suite
  */
-import { ApiClient } from '@popcorn-ai/cli';
-import type { CheckInput } from '@popcorn-ai/sdk';
+import { ApiClient } from '@popcornai/cli';
+import type { CheckInput } from '@popcornai/sdk';
 import { AGENT_NAME, loadTickets } from '../src/index';
 
 const SUITE = 'support-v1';

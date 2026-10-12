@@ -1,4 +1,4 @@
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 import { findCustomer, findOrder, searchHelpCenter } from './store';
 
 export const lookupOrder = popcorn.tool('lookup_order', async ({ orderId }: { orderId: string }) =>

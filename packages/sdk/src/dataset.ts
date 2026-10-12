@@ -1,4 +1,4 @@
-import type { CheckInput } from '@popcorn-ai/core';
+import type { CheckInput } from '@popcornai/core';
 import { apiRequest } from './api-client';
 
 export interface AddTestCaseOptions {

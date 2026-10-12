@@ -13,8 +13,8 @@ import {
   type Judge,
   type SpanPayload,
   type StoredSpan,
-} from '@popcorn-ai/core';
-import { popcorn } from '@popcorn-ai/sdk';
+} from '@popcornai/core';
+import { popcorn } from '@popcornai/sdk';
 import pLimit from 'p-limit';
 import { ApiClient } from '../api';
 import type { PopcornConfig } from '../config';

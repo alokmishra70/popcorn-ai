@@ -1,4 +1,4 @@
-import { listApiKeys } from '@popcorn-ai/db';
+import { listApiKeys } from '@popcornai/db';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ApiKeys } from '@/components/api-keys';

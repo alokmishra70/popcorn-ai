@@ -1,5 +1,5 @@
-import { SpanAttr } from '@popcorn-ai/core';
-import { hashArgs } from '@popcorn-ai/core/node';
+import { SpanAttr } from '@popcornai/core';
+import { hashArgs } from '@popcornai/core/node';
 import { TtlCache } from './cache';
 import { activeContext, nextStep } from './context';
 import { FixtureMissError, RecordedToolError } from './errors';

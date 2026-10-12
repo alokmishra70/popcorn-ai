@@ -1,5 +1,5 @@
 {
-  "name": "@popcorn-ai/db",
+  "name": "@popcornai/db",
   "version": "0.1.0",
   "private": true,
   "description": "Postgres schema, migrations and data access for Popcorn",
@@ -30,7 +30,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@popcorn-ai/core": "workspace:^",
+    "@popcornai/core": "workspace:^",
     "drizzle-orm": "^0.45.4",
     "postgres": "^3.4.9"
   },

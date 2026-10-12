@@ -1,5 +1,5 @@
-import type { SpanPayload, StoredSpan } from '@popcorn-ai/core';
-import { hashArgs } from '@popcorn-ai/core/node';
+import type { SpanPayload, StoredSpan } from '@popcornai/core';
+import { hashArgs } from '@popcornai/core/node';
 import { describe, expect, it, vi } from 'vitest';
 import { FixtureMissError, popcorn, type ReplayBundle } from '../src';
 import { FakeAnthropic } from './fake-clients';

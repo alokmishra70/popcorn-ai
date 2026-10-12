@@ -1,5 +1,5 @@
 import { writeFileSync } from 'node:fs';
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 import type { Command } from 'commander';
 import { loadConfig } from '../config';
 import { createAnthropicJudge } from '../judge';

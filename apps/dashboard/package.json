@@ -1,5 +1,5 @@
 {
-  "name": "@popcorn-ai/dashboard",
+  "name": "@popcornai/dashboard",
   "version": "0.1.0",
   "private": true,
   "description": "Popcorn dashboard: runs, timelines, replays and eval reviews",
@@ -15,8 +15,8 @@
     "clean": "rm -rf .next"
   },
   "dependencies": {
-    "@popcorn-ai/core": "workspace:^",
-    "@popcorn-ai/db": "workspace:^",
+    "@popcornai/core": "workspace:^",
+    "@popcornai/db": "workspace:^",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.13",

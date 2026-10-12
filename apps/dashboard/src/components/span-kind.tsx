@@ -1,4 +1,4 @@
-import type { SpanKind } from '@popcorn-ai/core';
+import type { SpanKind } from '@popcornai/core';
 import { Bot, Clapperboard, Footprints, Wrench } from 'lucide-react';
 import { cn } from '@/lib/utils';
 

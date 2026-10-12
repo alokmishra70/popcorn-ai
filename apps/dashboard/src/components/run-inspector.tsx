@@ -1,6 +1,6 @@
 'use client';
 
-import type { StoredSpan } from '@popcorn-ai/core';
+import type { StoredSpan } from '@popcornai/core';
 import { useMemo, useState } from 'react';
 import type { ChatItem } from '@/lib/conversation';
 import { computeWaterfall } from '@/lib/waterfall';

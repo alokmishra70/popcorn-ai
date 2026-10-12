@@ -1,4 +1,4 @@
-import type { RunFlag, RunStatus } from '@popcorn-ai/core';
+import type { RunFlag, RunStatus } from '@popcornai/core';
 import { Badge, type BadgeTone } from './ui/badge';
 
 const statusTone: Record<RunStatus, BadgeTone> = { ok: 'ok', error: 'danger', running: 'info' };

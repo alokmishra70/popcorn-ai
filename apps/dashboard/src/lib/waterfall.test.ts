@@ -1,4 +1,4 @@
-import type { StoredSpan } from '@popcorn-ai/core';
+import type { StoredSpan } from '@popcornai/core';
 import { describe, expect, it } from 'vitest';
 import { computeWaterfall } from './waterfall';
 

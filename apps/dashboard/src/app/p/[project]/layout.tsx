@@ -1,4 +1,4 @@
-import { listProjects } from '@popcorn-ai/db';
+import { listProjects } from '@popcornai/db';
 import { BookOpen } from 'lucide-react';
 import Link from 'next/link';
 import type { ReactNode } from 'react';

@@ -1,5 +1,5 @@
-import type { SpanPayload } from '@popcorn-ai/core';
-import { getProjectThresholds, ingestSpans, type Database, type Project } from '@popcorn-ai/db';
+import type { SpanPayload } from '@popcornai/core';
+import { getProjectThresholds, ingestSpans, type Database, type Project } from '@popcornai/db';
 import { Queue, type ConnectionOptions } from 'bullmq';
 
 export const INGEST_QUEUE = 'popcorn-ingest';

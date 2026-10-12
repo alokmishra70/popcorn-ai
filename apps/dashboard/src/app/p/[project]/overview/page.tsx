@@ -1,5 +1,5 @@
-import { formatDuration, formatPercent, formatTokens, formatUsd } from '@popcorn-ai/core';
-import { getDailyStats, getModelStats, getOverviewTotals, getToolStats } from '@popcorn-ai/db';
+import { formatDuration, formatPercent, formatTokens, formatUsd } from '@popcornai/core';
+import { getDailyStats, getModelStats, getOverviewTotals, getToolStats } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CostChart, ErrorRateChart, LatencyChart, RunsChart } from '@/components/charts';

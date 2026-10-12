@@ -1,4 +1,4 @@
-import { getRunSummary, getProjectBySlug, listenForRuns } from '@popcorn-ai/db';
+import { getRunSummary, getProjectBySlug, listenForRuns } from '@popcornai/db';
 import { database, db } from '@/server/db';
 
 export const runtime = 'nodejs';

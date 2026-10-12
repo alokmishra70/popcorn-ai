@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 
 let clock = Date.parse('2026-10-01T12:00:00Z');
 

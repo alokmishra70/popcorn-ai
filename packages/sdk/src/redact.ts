@@ -1,4 +1,4 @@
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 
 /** Returns the span to export, or null to drop it. Runs before the span leaves the process. */
 export type SpanRedactor = (span: SpanPayload) => SpanPayload | null;

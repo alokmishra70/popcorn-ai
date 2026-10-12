@@ -1,14 +1,29 @@
 {
-  "name": "@popcorn-ai/cli",
+  "name": "@popcornai/cli",
   "version": "0.1.0",
   "description": "Popcorn CLI: run eval suites (popcorn review), replay runs (popcorn rewind) and tail live runs (popcorn watch)",
+  "keywords": [
+    "ai",
+    "agents",
+    "llm",
+    "evals",
+    "replay",
+    "cli",
+    "github-action",
+    "popcorn"
+  ],
   "license": "MIT",
-  "type": "module",
+  "author": "Alok Mishra (https://github.com/alokmishra70)",
+  "homepage": "https://github.com/alokmishra70/popcorn-ai#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/popcorn-ai/popcorn",
+    "url": "https://github.com/alokmishra70/popcorn-ai",
     "directory": "packages/cli"
   },
+  "bugs": {
+    "url": "https://github.com/alokmishra70/popcorn-ai/issues"
+  },
+  "type": "module",
   "bin": {
     "popcorn": "./dist/bin.js"
   },
@@ -24,6 +39,9 @@
   "engines": {
     "node": ">=20.11"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -33,8 +51,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
-    "@popcorn-ai/core": "workspace:^",
-    "@popcorn-ai/sdk": "workspace:^",
+    "@popcornai/core": "workspace:^",
+    "@popcornai/sdk": "workspace:^",
     "commander": "^12.1.0",
     "jiti": "^2.7.0",
     "p-limit": "^7.3.3"

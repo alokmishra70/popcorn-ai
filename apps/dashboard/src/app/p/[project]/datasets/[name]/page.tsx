@@ -1,5 +1,5 @@
-import { checkLabel, checkListSchema, formatPercent, formatUsd } from '@popcorn-ai/core';
-import { getDataset, listEvalRuns, listTestCases } from '@popcorn-ai/db';
+import { checkLabel, checkListSchema, formatPercent, formatUsd } from '@popcornai/core';
+import { getDataset, listEvalRuns, listTestCases } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';

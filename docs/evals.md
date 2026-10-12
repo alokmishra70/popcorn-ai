@@ -7,7 +7,7 @@ An eval suite is a dataset of test cases. `popcorn review` runs every case throu
 `popcorn.config.ts` in your project root:
 
 ```ts
-import { defineConfig } from '@popcorn-ai/cli';
+import { defineConfig } from '@popcornai/cli';
 import { supportTriage } from './src/agent';
 
 export default defineConfig({

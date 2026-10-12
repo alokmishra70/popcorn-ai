@@ -10,3 +10,9 @@ coverage
 playwright-report
 test-results
 .DS_Store
+
+# Personal notes, never committed
+private-notes/
+
+# Demo video: uploaded to the GitHub README instead of committed
+media/

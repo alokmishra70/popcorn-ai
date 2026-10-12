@@ -1,5 +1,5 @@
-import { RUN_FLAGS } from '@popcorn-ai/core';
-import { countRuns, getRunFacets, listRuns } from '@popcorn-ai/db';
+import { RUN_FLAGS } from '@popcornai/core';
+import { countRuns, getRunFacets, listRuns } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EmptyState, PageHeader } from '@/components/page-header';

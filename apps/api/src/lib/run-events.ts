@@ -1,5 +1,5 @@
 import { EventEmitter } from 'node:events';
-import { listenForRuns, type DbHandle, type RunNotification } from '@popcorn-ai/db';
+import { listenForRuns, type DbHandle, type RunNotification } from '@popcornai/db';
 
 /**
  * One LISTEN connection per process, fanned out to every open SSE stream.

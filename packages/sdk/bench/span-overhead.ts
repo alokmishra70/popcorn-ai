@@ -3,10 +3,10 @@
  * context propagation, serialization and redaction. The transport discards
  * spans, so network time is excluded by design.
  *
- *   pnpm --filter @popcorn-ai/sdk bench
+ *   pnpm --filter @popcornai/sdk bench
  */
 import { performance } from 'node:perf_hooks';
-import { percentile } from '@popcorn-ai/core';
+import { percentile } from '@popcornai/core';
 import { popcorn, redactors } from '../src';
 
 const ITERATIONS = 20_000;

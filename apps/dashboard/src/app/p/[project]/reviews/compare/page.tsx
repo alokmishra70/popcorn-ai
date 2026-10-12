@@ -1,5 +1,5 @@
-import { compareEvalRuns } from '@popcorn-ai/core';
-import { getEvalRun, toEvalOutcome } from '@popcorn-ai/db';
+import { compareEvalRuns } from '@popcornai/core';
+import { getEvalRun, toEvalOutcome } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';

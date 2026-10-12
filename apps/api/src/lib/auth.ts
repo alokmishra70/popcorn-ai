@@ -1,4 +1,4 @@
-import { authenticateApiKey, type Database, type Project } from '@popcorn-ai/db';
+import { authenticateApiKey, type Database, type Project } from '@popcornai/db';
 import type { FastifyRequest } from 'fastify';
 import { HttpError } from './errors';
 

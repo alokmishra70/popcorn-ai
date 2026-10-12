@@ -5,7 +5,7 @@ import type {
   SpanError,
   SpanKind,
   SpanStatus,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import { sql } from 'drizzle-orm';
 import {
   boolean,

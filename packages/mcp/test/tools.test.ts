@@ -1,4 +1,4 @@
-import type { ApiClient } from '@popcorn-ai/cli';
+import type { ApiClient } from '@popcornai/cli';
 import { describe, expect, it } from 'vitest';
 import { getRun, searchRuns } from '../src/tools';
 

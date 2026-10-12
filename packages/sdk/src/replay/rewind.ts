@@ -5,7 +5,7 @@ import {
   type RunDiff,
   type SpanPayload,
   type StoredSpan,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import { apiRequest } from '../api-client';
 import { PopcornError } from '../errors';
 import { getRuntime } from '../runtime';

@@ -1,4 +1,4 @@
-import { compareEvalRuns, type CheckResult } from '@popcorn-ai/core';
+import { compareEvalRuns, type CheckResult } from '@popcornai/core';
 import {
   findBaselineEvalRun,
   getDataset,
@@ -7,7 +7,7 @@ import {
   recordEvalRun,
   toEvalOutcome,
   type Database,
-} from '@popcorn-ai/db';
+} from '@popcornai/db';
 import type { FastifyPluginAsync } from 'fastify';
 import { z } from 'zod';
 import { HttpError, notFound } from '../lib/errors';

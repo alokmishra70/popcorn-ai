@@ -1,4 +1,4 @@
-import type { StoredSpan } from '@popcorn-ai/core';
+import type { StoredSpan } from '@popcornai/core';
 import type { SpanRow } from './schema';
 
 export function toStoredSpan(row: SpanRow): StoredSpan {

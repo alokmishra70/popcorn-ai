@@ -1,4 +1,4 @@
-import { formatDuration, formatTokens, formatUsd } from '@popcorn-ai/core';
+import { formatDuration, formatTokens, formatUsd } from '@popcornai/core';
 import type { Command } from 'commander';
 import { ApiClient } from '../api';
 

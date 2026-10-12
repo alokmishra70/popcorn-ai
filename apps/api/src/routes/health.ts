@@ -1,4 +1,4 @@
-import { ping, type Database } from '@popcorn-ai/db';
+import { ping, type Database } from '@popcornai/db';
 import type { FastifyPluginAsync } from 'fastify';
 import type { IngestQueue } from '../ingest/queue';
 

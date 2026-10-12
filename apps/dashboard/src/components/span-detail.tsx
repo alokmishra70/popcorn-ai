@@ -1,6 +1,6 @@
 'use client';
 
-import { formatDuration, formatTokens, formatUsd, type StoredSpan } from '@popcorn-ai/core';
+import { formatDuration, formatTokens, formatUsd, type StoredSpan } from '@popcornai/core';
 import { JsonView } from './json-view';
 import { Badge } from './ui/badge';
 import { KindIcon } from './span-kind';

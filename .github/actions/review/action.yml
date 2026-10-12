@@ -13,7 +13,7 @@ inputs:
     description: Path to popcorn.config.ts, relative to working-directory
     default: ''
   working-directory:
-    description: Directory that contains popcorn.config.ts and has @popcorn-ai/cli installed
+    description: Directory that contains popcorn.config.ts and has @popcornai/cli installed
     default: '.'
   baseline-branch:
     description: Branch whose latest eval run is the baseline

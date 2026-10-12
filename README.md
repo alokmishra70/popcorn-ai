@@ -5,7 +5,7 @@
 Popcorn is an open-source tracing, replay and regression-eval toolkit for tool-calling AI agents written in TypeScript. Wrap your LLM client and tools once; every run becomes a trace you can inspect, rewind against recorded tool outputs, and turn into a test case that runs on every pull request.
 
 ```ts
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 
 const anthropic = popcorn.wrapAnthropic(new Anthropic());
 const lookupOrder = popcorn.tool('lookup_order', fetchOrder);
@@ -34,7 +34,7 @@ Plus OpenTelemetry ingest for agents in other languages, PII redaction before ex
 ```mermaid
 flowchart LR
   subgraph app["Your app"]
-    SDK["@popcorn-ai/sdk"]
+    SDK["@popcornai/sdk"]
   end
   SDK -- "batched spans" --> API["Ingest API<br/>Fastify + Zod"]
   OTel["OTLP exporters"] --> API
@@ -52,7 +52,7 @@ Only the SDK runs inside your application. If Popcorn is down, spans wait in a b
 
 ```bash
 docker compose up        # API :4100, dashboard :3000, Postgres, Redis, a seeded project
-npm install @popcorn-ai/sdk
+npm install @popcornai/sdk
 ```
 
 Then follow the [quickstart](docs/quickstart.md). The [dogfood agent](examples/support-agent) is a working example: a support-ticket triage agent on Claude with a 40-case eval suite, runnable offline with no API key.
@@ -64,18 +64,18 @@ Measured in this repo on an Apple Silicon laptop with local Postgres 14, Node 22
 | Metric                                       | Result                                                                                              | Target                | How                                                                                  |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------ |
 | SDK overhead per span, p95                   | 0.25 ms                                                                                             | < 5 ms                | `pnpm bench:sdk`                                                                     |
-| Ingest throughput, one API process, no queue | ~11,000 spans/s, p95 46 ms per 100-span batch                                                       | 500 spans/s on 2 vCPU | `pnpm --filter @popcorn-ai/api bench`; `k6 run bench/ingest.k6.js` on your target VM |
+| Ingest throughput, one API process, no queue | ~11,000 spans/s, p95 46 ms per 100-span batch                                                       | 500 spans/s on 2 vCPU | `pnpm --filter @popcornai/api bench`; `k6 run bench/ingest.k6.js` on your target VM |
 | Tests                                        | 109: 100 unit and integration (against real Postgres), 9 Playwright e2e; SDK statement coverage 80% | 80% on SDK and API    | `pnpm test`, `pnpm test:e2e`                                                         |
 
 ## Repository
 
 | Path                     | Package            | What it is                                                                                     |
 | ------------------------ | ------------------ | ---------------------------------------------------------------------------------------------- |
-| `packages/core`          | `@popcorn-ai/core` | Span schema, pricing, anomaly flags, run diffing, eval checks. Pure, shared by everything else |
-| `packages/sdk`           | `@popcorn-ai/sdk`  | The tracing SDK: context propagation, exporter, client wrappers, rewind                        |
-| `packages/db`            | `@popcorn-ai/db`   | Drizzle schema, migrations and queries                                                         |
-| `packages/cli`           | `@popcorn-ai/cli`  | `popcorn review`, `rewind`, `watch`, `dataset add`                                             |
-| `packages/mcp`           | `@popcorn-ai/mcp`  | MCP server: `search_runs`, `get_run`, `run_eval`                                               |
+| `packages/core`          | `@popcornai/core` | Span schema, pricing, anomaly flags, run diffing, eval checks. Pure, shared by everything else |
+| `packages/sdk`           | `@popcornai/sdk`  | The tracing SDK: context propagation, exporter, client wrappers, rewind                        |
+| `packages/db`            | `@popcornai/db`   | Drizzle schema, migrations and queries                                                         |
+| `packages/cli`           | `@popcornai/cli`  | `popcorn review`, `rewind`, `watch`, `dataset add`                                             |
+| `packages/mcp`           | `@popcornai/mcp`  | MCP server: `search_runs`, `get_run`, `run_eval`                                               |
 | `apps/api`               |                    | Fastify ingest and query API, BullMQ worker                                                    |
 | `apps/dashboard`         |                    | Next.js dashboard                                                                              |
 | `examples/support-agent` |                    | Dogfood agent and eval suite                                                                   |

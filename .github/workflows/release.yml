@@ -21,7 +21,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - name: Publish to npm
-        run: pnpm publish -r --access public --no-git-checks --filter @popcorn-ai/core --filter @popcorn-ai/sdk --filter @popcorn-ai/cli --filter @popcorn-ai/mcp
+        run: pnpm publish -r --access public --no-git-checks --filter @popcornai/core --filter @popcornai/sdk --filter @popcornai/cli --filter @popcornai/mcp
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: 'true'

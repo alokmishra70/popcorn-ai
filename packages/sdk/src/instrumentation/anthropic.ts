@@ -1,4 +1,4 @@
-import { SpanAttr, type TokenUsage } from '@popcorn-ai/core';
+import { SpanAttr, type TokenUsage } from '@popcornai/core';
 import type { ReplaySession } from '../replay/session';
 import { instrumentStream, startLlmCall, type LlmResultView } from './llm-call';
 import { patchMethods, type MethodPatch } from './proxy';

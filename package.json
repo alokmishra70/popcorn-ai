@@ -10,17 +10,17 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel --filter=@popcorn-ai/api --filter=@popcorn-ai/dashboard",
+    "dev": "turbo run dev --parallel --filter=@popcornai/api --filter=@popcornai/dashboard",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "test:e2e": "pnpm --filter @popcorn-ai/dashboard test:e2e",
-    "db:generate": "pnpm --filter @popcorn-ai/db generate",
-    "db:migrate": "pnpm --filter @popcorn-ai/db migrate",
-    "db:seed": "pnpm --filter @popcorn-ai/db seed",
-    "bench:sdk": "pnpm --filter @popcorn-ai/sdk bench",
+    "test:e2e": "pnpm --filter @popcornai/dashboard test:e2e",
+    "db:generate": "pnpm --filter @popcornai/db generate",
+    "db:migrate": "pnpm --filter @popcornai/db migrate",
+    "db:seed": "pnpm --filter @popcornai/db seed",
+    "bench:sdk": "pnpm --filter @popcornai/sdk bench",
     "clean": "turbo run clean && rm -rf node_modules"
   },
   "devDependencies": {

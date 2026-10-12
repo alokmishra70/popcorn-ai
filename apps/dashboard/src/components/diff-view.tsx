@@ -5,7 +5,7 @@ import {
   type RunDiff,
   type StepChange,
   type StepView,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import { cn } from '@/lib/utils';
 import { JsonView } from './json-view';
 import { KindIcon } from './span-kind';

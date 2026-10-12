@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
-import { formatDuration, formatUsd } from '@popcorn-ai/core';
-import { popcorn } from '@popcorn-ai/sdk';
+import { formatDuration, formatUsd } from '@popcornai/core';
+import { popcorn } from '@popcornai/sdk';
 import type { Command } from 'commander';
 import { loadConfig } from '../config';
 

@@ -36,4 +36,4 @@ Never edit a migration that has been released.
 
 ## Releases
 
-Versions follow semver; until 1.0.0 the SDK API may change, and breaking changes are listed under **Breaking** in the changelog with a migration note. To release, update `CHANGELOG.md` and package versions, then push a `vX.Y.Z` tag. The release workflow publishes `@popcorn-ai/core`, `sdk`, `cli` and `mcp` to npm and creates the GitHub release.
+Versions follow semver; until 1.0.0 the SDK API may change, and breaking changes are listed under **Breaking** in the changelog with a migration note. To release, update `CHANGELOG.md` and package versions, then push a `vX.Y.Z` tag. The release workflow publishes `@popcornai/core`, `sdk`, `cli` and `mcp` to npm and creates the GitHub release.

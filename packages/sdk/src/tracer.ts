@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import type { SpanKind } from '@popcorn-ai/core';
+import type { SpanKind } from '@popcornai/core';
 import { activeContext, runInContext, type RunState, type TraceContext } from './context';
 import type { ReplaySession } from './replay/session';
 import { getRuntime } from './runtime';

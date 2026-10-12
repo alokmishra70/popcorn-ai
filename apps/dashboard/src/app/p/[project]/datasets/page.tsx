@@ -1,5 +1,5 @@
-import { formatPercent } from '@popcorn-ai/core';
-import { listDatasets } from '@popcorn-ai/db';
+import { formatPercent } from '@popcornai/core';
+import { listDatasets } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EmptyState, PageHeader } from '@/components/page-header';

@@ -1,5 +1,5 @@
-import { compareEvalRuns, formatDuration, formatUsd } from '@popcorn-ai/core';
-import { findBaselineEvalRun, getEvalRun, toEvalOutcome } from '@popcorn-ai/db';
+import { compareEvalRuns, formatDuration, formatUsd } from '@popcornai/core';
+import { findBaselineEvalRun, getEvalRun, toEvalOutcome } from '@popcornai/db';
 import { Check, X } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';

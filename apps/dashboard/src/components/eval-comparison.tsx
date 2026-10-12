@@ -4,7 +4,7 @@ import {
   formatUsd,
   type CaseChange,
   type EvalComparison,
-} from '@popcorn-ai/core';
+} from '@popcornai/core';
 import { Stat } from './stat';
 import { Badge, type BadgeTone } from './ui/badge';
 import { Card, CardHeader, CardTitle } from './ui/card';

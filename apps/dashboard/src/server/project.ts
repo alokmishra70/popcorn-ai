@@ -1,5 +1,5 @@
 import 'server-only';
-import { getProjectBySlug, type Project } from '@popcorn-ai/db';
+import { getProjectBySlug, type Project } from '@popcornai/db';
 import { notFound } from 'next/navigation';
 import { cache } from 'react';
 import { db } from './db';

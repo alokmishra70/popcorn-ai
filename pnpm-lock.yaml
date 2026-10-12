@@ -199,10 +199,10 @@ importers:
       '@fastify/cors':
         specifier: ^11.3.1
         version: 11.3.1
-      '@popcorn-ai/core':
+      '@popcornai/core':
         specifier: workspace:^
         version: link:../../packages/core
-      '@popcorn-ai/db':
+      '@popcornai/db':
         specifier: workspace:^
         version: link:../../packages/db
       bullmq:
@@ -227,10 +227,10 @@ importers:
 
   apps/dashboard:
     dependencies:
-      '@popcorn-ai/core':
+      '@popcornai/core':
         specifier: workspace:^
         version: link:../../packages/core
-      '@popcorn-ai/db':
+      '@popcornai/db':
         specifier: workspace:^
         version: link:../../packages/db
       '@radix-ui/react-dialog':
@@ -303,10 +303,10 @@ importers:
       '@anthropic-ai/sdk':
         specifier: ^0.133.0
         version: 0.133.0(zod@4.6.5)
-      '@popcorn-ai/cli':
+      '@popcornai/cli':
         specifier: workspace:^
         version: link:../../packages/cli
-      '@popcorn-ai/sdk':
+      '@popcornai/sdk':
         specifier: workspace:^
         version: link:../../packages/sdk
     devDependencies:
@@ -319,10 +319,10 @@ importers:
       '@anthropic-ai/sdk':
         specifier: ^0.133.0
         version: 0.133.0(zod@4.6.5)
-      '@popcorn-ai/core':
+      '@popcornai/core':
         specifier: workspace:^
         version: link:../core
-      '@popcorn-ai/sdk':
+      '@popcornai/sdk':
         specifier: workspace:^
         version: link:../sdk
       commander:
@@ -354,7 +354,7 @@ importers:
 
   packages/db:
     dependencies:
-      '@popcorn-ai/core':
+      '@popcornai/core':
         specifier: workspace:^
         version: link:../core
       drizzle-orm:
@@ -379,10 +379,10 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: ^1.32.1
         version: 1.32.1(supports-color@7.2.0)(zod@4.6.5)
-      '@popcorn-ai/cli':
+      '@popcornai/cli':
         specifier: workspace:^
         version: link:../cli
-      '@popcorn-ai/core':
+      '@popcornai/core':
         specifier: workspace:^
         version: link:../core
       zod:
@@ -395,7 +395,7 @@ importers:
 
   packages/sdk:
     dependencies:
-      '@popcorn-ai/core':
+      '@popcornai/core':
         specifier: workspace:^
         version: link:../core
     devDependencies:

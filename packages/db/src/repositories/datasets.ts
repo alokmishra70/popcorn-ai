@@ -1,4 +1,4 @@
-import type { Check } from '@popcorn-ai/core';
+import type { Check } from '@popcornai/core';
 import { and, asc, desc, eq, sql } from 'drizzle-orm';
 import type { Database } from '../client';
 import { datasets, evalRuns, runs, testCases, type Dataset, type TestCase } from '../schema';

@@ -1,5 +1,5 @@
-import { diffRuns } from '@popcorn-ai/core';
-import { getRun } from '@popcorn-ai/db';
+import { diffRuns } from '@popcornai/core';
+import { getRun } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';

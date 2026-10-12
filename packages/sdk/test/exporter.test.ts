@@ -1,4 +1,4 @@
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { BatchExporter } from '../src/exporter';
 import { createLogger } from '../src/logger';

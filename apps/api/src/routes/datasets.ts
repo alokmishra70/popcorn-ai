@@ -1,4 +1,4 @@
-import { checkListSchema } from '@popcorn-ai/core';
+import { checkListSchema } from '@popcornai/core';
 import {
   addTestCase,
   getDataset,
@@ -6,7 +6,7 @@ import {
   listTestCases,
   SourceRunNotFoundError,
   type Database,
-} from '@popcorn-ai/db';
+} from '@popcornai/db';
 import type { FastifyPluginAsync } from 'fastify';
 import { z } from 'zod';
 import { HttpError, notFound } from '../lib/errors';

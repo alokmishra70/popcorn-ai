@@ -1,5 +1,5 @@
 import 'server-only';
-import { createDb, type DbHandle } from '@popcorn-ai/db';
+import { createDb, type DbHandle } from '@popcornai/db';
 import { env } from './env';
 
 // Reuse one pool across hot reloads in development.

@@ -1,5 +1,5 @@
 import cors from '@fastify/cors';
-import type { DbHandle } from '@popcorn-ai/db';
+import type { DbHandle } from '@popcornai/db';
 import Fastify, { type FastifyServerOptions } from 'fastify';
 import type { IngestQueue } from './ingest/queue';
 import { createAuthenticator } from './lib/auth';

@@ -1,4 +1,4 @@
-import { compareEvalRuns } from '@popcorn-ai/core';
+import { compareEvalRuns } from '@popcornai/core';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import type { DbHandle } from '../src/client';
 import { addTestCase, listDatasets, SourceRunNotFoundError } from '../src/repositories/datasets';

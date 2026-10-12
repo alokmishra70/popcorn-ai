@@ -1,5 +1,5 @@
-import { RUN_FLAGS, RUN_STATUSES, type RunFlag, type RunStatus } from '@popcorn-ai/core';
-import type { RunFilters } from '@popcorn-ai/db';
+import { RUN_FLAGS, RUN_STATUSES, type RunFlag, type RunStatus } from '@popcornai/core';
+import type { RunFilters } from '@popcornai/db';
 
 export type SearchParams = Record<string, string | string[] | undefined>;
 

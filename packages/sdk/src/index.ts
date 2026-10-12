@@ -69,7 +69,7 @@ export {
   currentRunId,
   redactors,
 };
-export { SpanAttr, type SpanPayload, type CheckInput } from '@popcorn-ai/core';
+export { SpanAttr, type SpanPayload, type CheckInput } from '@popcornai/core';
 export type { PopcornOptions } from './runtime';
 export type { TraceOptions, Agent, AgentFn } from './tracer';
 export type { ToolOptions, ToolCacheOptions } from './tool';

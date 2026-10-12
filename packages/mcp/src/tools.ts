@@ -6,8 +6,8 @@ import {
   type RunFlag,
   type RunStatus,
   type StoredSpan,
-} from '@popcorn-ai/core';
-import type { ApiClient } from '@popcorn-ai/cli';
+} from '@popcornai/core';
+import type { ApiClient } from '@popcornai/cli';
 
 /*
  * Tool handlers for the MCP server, kept separate from the transport so they

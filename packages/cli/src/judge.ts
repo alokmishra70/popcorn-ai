@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import Anthropic from '@anthropic-ai/sdk';
-import type { Judge, JudgeRequest, JudgeVerdict } from '@popcorn-ai/core';
+import type { Judge, JudgeRequest, JudgeVerdict } from '@popcornai/core';
 
 export const DEFAULT_JUDGE_MODEL = 'claude-haiku-5-5';
 

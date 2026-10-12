@@ -36,7 +36,7 @@ Thresholds are per project, under **Settings**.
 
 ## Cost
 
-Computed by the worker from a price table of USD per million tokens ([`models.json`](https://github.com/popcorn-ai/popcorn/blob/main/packages/core/src/pricing/models.json)). Cache reads and writes are priced separately. Models missing from the table are recorded with no cost rather than a guessed one.
+Computed by the worker from a price table of USD per million tokens ([`models.json`](https://github.com/alokmishra70/popcorn-ai/blob/main/packages/core/src/pricing/models.json)). Cache reads and writes are priced separately. Models missing from the table are recorded with no cost rather than a guessed one.
 
 ## Fixture
 

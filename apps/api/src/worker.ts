@@ -1,4 +1,4 @@
-import { createDb, deleteRunsOlderThan } from '@popcorn-ai/db';
+import { createDb, deleteRunsOlderThan } from '@popcornai/db';
 import { Queue, Worker } from 'bullmq';
 import { loadConfig } from './config';
 import { INGEST_QUEUE, processIngestJob, redisConnection, type IngestJob } from './ingest/queue';

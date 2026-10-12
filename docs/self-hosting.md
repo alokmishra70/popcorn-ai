@@ -40,8 +40,8 @@ pnpm install && pnpm build
 cp .env.example .env            # set DATABASE_URL
 pnpm db:migrate
 pnpm db:seed                    # prints an API key
-pnpm --filter @popcorn-ai/api start
-pnpm --filter @popcorn-ai/dashboard start
+pnpm --filter @popcornai/api start
+pnpm --filter @popcornai/dashboard start
 ```
 
 ## API configuration

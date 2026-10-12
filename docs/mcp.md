@@ -1,12 +1,12 @@
 # MCP server
 
-`@popcorn-ai/mcp` lets Claude, or any MCP client, debug your agent from its traces.
+`@popcornai/mcp` lets Claude, or any MCP client, debug your agent from its traces.
 
 ```bash
 claude mcp add popcorn \
   --env POPCORN_ENDPOINT=http://localhost:4100 \
   --env POPCORN_API_KEY=pk_... \
-  -- npx @popcorn-ai/mcp
+  -- npx @popcornai/mcp
 ```
 
 | Tool          | Description                                                                     |

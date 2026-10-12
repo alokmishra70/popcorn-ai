@@ -1,5 +1,5 @@
-import { RUN_FLAGS, RUN_STATUSES, diffRuns } from '@popcorn-ai/core';
-import { getReplayBundle, getRun, listRuns, type Database } from '@popcorn-ai/db';
+import { RUN_FLAGS, RUN_STATUSES, diffRuns } from '@popcornai/core';
+import { getReplayBundle, getRun, listRuns, type Database } from '@popcornai/db';
 import type { FastifyPluginAsync } from 'fastify';
 import { z } from 'zod';
 import { notFound } from '../lib/errors';

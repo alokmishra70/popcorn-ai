@@ -1,5 +1,5 @@
-import { checkListSchema } from '@popcorn-ai/core';
-import { popcorn } from '@popcorn-ai/sdk';
+import { checkListSchema } from '@popcornai/core';
+import { popcorn } from '@popcornai/sdk';
 import type { Command } from 'commander';
 
 interface AddFlags {

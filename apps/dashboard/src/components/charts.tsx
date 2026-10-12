@@ -1,6 +1,6 @@
 'use client';
 
-import { formatDuration, formatUsd } from '@popcorn-ai/core';
+import { formatDuration, formatUsd } from '@popcornai/core';
 import {
   Area,
   AreaChart,

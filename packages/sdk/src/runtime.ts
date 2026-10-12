@@ -1,4 +1,4 @@
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 import { BatchExporter } from './exporter';
 import { createLogger, type Logger } from './logger';
 import { redactors, stripSecrets, type SpanRedactor } from './redact';

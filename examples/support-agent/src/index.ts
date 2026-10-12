@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import Anthropic from '@anthropic-ai/sdk';
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 import { createTriageAgent, type MessagesClient, type Ticket, type Triage } from './agent';
 import { OfflineModel } from './offline-model';
 

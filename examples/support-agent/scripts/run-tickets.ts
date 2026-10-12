@@ -5,7 +5,7 @@
  *   pnpm tickets 5          the first 5
  *   SUPPORT_AGENT_OFFLINE=true pnpm tickets
  */
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 import { loadTickets, model, offline, supportTriage } from '../src/index';
 
 const limit = Number(process.argv[2] ?? Infinity);

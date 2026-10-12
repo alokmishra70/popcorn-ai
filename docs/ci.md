@@ -11,7 +11,7 @@ The Popcorn GitHub Action runs a suite on every pull request and posts one comme
 
 ## Setup
 
-1. Add `@popcorn-ai/cli` to your project's dev dependencies and commit `popcorn.config.ts`.
+1. Add `@popcornai/cli` to your project's dev dependencies and commit `popcorn.config.ts`.
 2. Add repository secrets: `POPCORN_API_KEY` (a key from **Settings**, e.g. named `ci`) and whatever your agent needs (`ANTHROPIC_API_KEY`).
 3. Add `.github/workflows/popcorn.yml`:
 
@@ -37,7 +37,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm ci
-      - uses: popcorn-ai/popcorn/.github/actions/review@v1
+      - uses: alokmishra70/popcorn-ai/.github/actions/review@v1
         with:
           suite: support-v1
 ```
@@ -50,7 +50,7 @@ Running on pushes to `main` matters: those reviews are the baselines pull reques
 | ------------------- | ------------ | ------------------------------------------- |
 | `suite`             | required     | Dataset to run                              |
 | `config`            |              | Path to `popcorn.config.ts`                 |
-| `working-directory` | `.`          | Where the config and `@popcorn-ai/cli` live |
+| `working-directory` | `.`          | Where the config and `@popcornai/cli` live |
 | `baseline-branch`   | `main`       | Branch to compare against                   |
 | `repeat`            | `1`          | Attempts per case, to catch flaky cases     |
 | `fail-on`           | `regression` | `regression`, `any` or `never`              |

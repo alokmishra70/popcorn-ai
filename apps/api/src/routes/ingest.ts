@@ -1,4 +1,4 @@
-import { spanBatchSchema } from '@popcorn-ai/core';
+import { spanBatchSchema } from '@popcornai/core';
 import type { FastifyPluginAsync } from 'fastify';
 import { HttpError } from '../lib/errors';
 import { convertOtlp, type OtlpTraceRequest } from '../ingest/otlp';

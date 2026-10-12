@@ -29,7 +29,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm turbo run build --filter=@popcorn-ai/cli...
+      - run: pnpm turbo run build --filter=@popcornai/cli...
       - uses: ./.github/actions/review
         with:
           suite: support-v1

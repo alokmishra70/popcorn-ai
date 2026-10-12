@@ -1,4 +1,4 @@
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 import { throttle, type Logger } from './logger';
 import { TransportError, type SpanTransport } from './transport';
 

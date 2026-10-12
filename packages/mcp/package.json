@@ -1,8 +1,27 @@
 {
-  "name": "@popcorn-ai/mcp",
+  "name": "@popcornai/mcp",
   "version": "0.1.0",
   "description": "MCP server for Popcorn: lets Claude or another agent search runs, read traces and run eval suites",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "agents",
+    "tracing",
+    "popcorn"
+  ],
   "license": "MIT",
+  "author": "Alok Mishra (https://github.com/alokmishra70)",
+  "homepage": "https://github.com/alokmishra70/popcorn-ai#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alokmishra70/popcorn-ai",
+    "directory": "packages/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/alokmishra70/popcorn-ai/issues"
+  },
   "type": "module",
   "bin": {
     "popcorn-mcp": "./dist/server.js"
@@ -16,6 +35,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -25,8 +47,8 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.1",
-    "@popcorn-ai/cli": "workspace:^",
-    "@popcorn-ai/core": "workspace:^",
+    "@popcornai/cli": "workspace:^",
+    "@popcornai/core": "workspace:^",
     "zod": "^4.3.3"
   },
   "devDependencies": {

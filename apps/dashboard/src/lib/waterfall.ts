@@ -1,4 +1,4 @@
-import { buildSpanTree, flattenTree, formatDuration, type StoredSpan } from '@popcorn-ai/core';
+import { buildSpanTree, flattenTree, formatDuration, type StoredSpan } from '@popcornai/core';
 
 export interface WaterfallRow {
   span: StoredSpan;

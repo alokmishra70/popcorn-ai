@@ -1,4 +1,4 @@
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 import { popcorn, type PopcornOptions, type SpanTransport } from '../src';
 
 export class MemoryTransport implements SpanTransport {

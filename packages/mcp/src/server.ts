@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import { RUN_FLAGS, RUN_STATUSES } from '@popcorn-ai/core';
+import { RUN_FLAGS, RUN_STATUSES } from '@popcornai/core';
 import {
   ApiClient,
   loadConfig,
   renderMarkdown,
   runReview,
   createAnthropicJudge,
-} from '@popcorn-ai/cli';
+} from '@popcornai/cli';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
@@ -16,7 +16,7 @@ import { getRun, searchRuns } from './tools';
 /**
  * Popcorn as an MCP server (FR-5.7). Reads POPCORN_ENDPOINT and POPCORN_API_KEY.
  *
- *   claude mcp add popcorn -- npx @popcorn-ai/mcp
+ *   claude mcp add popcorn -- npx @popcornai/mcp
  */
 const api = new ApiClient();
 const server = new McpServer({ name: 'popcorn', version: pkg.version });

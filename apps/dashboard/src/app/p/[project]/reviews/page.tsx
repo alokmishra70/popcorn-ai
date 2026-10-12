@@ -1,5 +1,5 @@
-import { formatDuration, formatPercent, formatUsd } from '@popcorn-ai/core';
-import { getJudgeAgreement, listEvalRuns } from '@popcorn-ai/db';
+import { formatDuration, formatPercent, formatUsd } from '@popcornai/core';
+import { getJudgeAgreement, listEvalRuns } from '@popcornai/db';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CompareRunsForm } from '@/components/compare-runs-form';

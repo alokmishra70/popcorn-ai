@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import type { PopcornOptions } from '@popcorn-ai/sdk';
+import type { PopcornOptions } from '@popcornai/sdk';
 import { createJiti } from 'jiti';
 
 type AnyAgent = (input: never) => unknown;

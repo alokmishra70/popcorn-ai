@@ -1,6 +1,6 @@
 'use client';
 
-import { RUN_FLAGS } from '@popcorn-ai/core';
+import { RUN_FLAGS } from '@popcornai/core';
 import { Search, X } from 'lucide-react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import type { FormEvent } from 'react';

@@ -1,6 +1,6 @@
 'use server';
 
-import { checkListSchema } from '@popcorn-ai/core';
+import { checkListSchema } from '@popcornai/core';
 import {
   addTestCase,
   createApiKey,
@@ -10,7 +10,7 @@ import {
   SLUG_PATTERN,
   SourceRunNotFoundError,
   updateProjectSettings,
-} from '@popcorn-ai/db';
+} from '@popcornai/db';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';

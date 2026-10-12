@@ -3,10 +3,10 @@
  * batches as fast as the API accepts them with fixed concurrency, then reports
  * throughput and latency.
  *
- *   pnpm --filter @popcorn-ai/api bench [seconds] [concurrency]
+ *   pnpm --filter @popcornai/api bench [seconds] [concurrency]
  */
 import { randomUUID } from 'node:crypto';
-import { percentile } from '@popcorn-ai/core';
+import { percentile } from '@popcornai/core';
 
 const endpoint = process.env.POPCORN_ENDPOINT ?? 'http://localhost:4100';
 const apiKey = process.env.POPCORN_API_KEY;

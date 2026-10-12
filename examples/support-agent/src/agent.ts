@@ -1,5 +1,5 @@
 import type Anthropic from '@anthropic-ai/sdk';
-import { popcorn, SpanAttr } from '@popcorn-ai/sdk';
+import { popcorn, SpanAttr } from '@popcornai/sdk';
 import { toolDefinitions, toolHandlers, type Category, type Priority } from './tools';
 
 export interface Ticket {

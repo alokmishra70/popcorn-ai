@@ -1,4 +1,4 @@
-import { listProjects } from '@popcorn-ai/db';
+import { listProjects } from '@popcornai/db';
 import { redirect } from 'next/navigation';
 import { Wordmark } from '@/components/logo';
 import { CreateProjectForm } from '@/components/create-project-form';

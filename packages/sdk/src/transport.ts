@@ -1,4 +1,4 @@
-import type { SpanPayload } from '@popcorn-ai/core';
+import type { SpanPayload } from '@popcornai/core';
 import { SDK_NAME, SDK_VERSION } from './version';
 
 export class TransportError extends Error {

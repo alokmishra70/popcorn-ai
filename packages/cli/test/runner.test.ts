@@ -1,4 +1,4 @@
-import { popcorn } from '@popcorn-ai/sdk';
+import { popcorn } from '@popcornai/sdk';
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import type { ApiClient } from '../src/api';
 import { defineConfig } from '../src/config';

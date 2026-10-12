@@ -1,4 +1,4 @@
-import { findRootSpan, type StoredSpan } from '@popcorn-ai/core';
+import { findRootSpan, type StoredSpan } from '@popcornai/core';
 
 export type ChatItem =
   | { kind: 'system'; text: string }

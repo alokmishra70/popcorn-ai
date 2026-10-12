@@ -12,7 +12,7 @@ FROM base AS build
 COPY . .
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 ENV NEXT_TELEMETRY_DISABLED=1
-RUN pnpm turbo run build --filter=@popcorn-ai/api... --filter=@popcorn-ai/dashboard...
+RUN pnpm turbo run build --filter=@popcornai/api... --filter=@popcornai/dashboard...
 
 FROM base AS server
 ENV NODE_ENV=production
